@@ -13,6 +13,10 @@ function App() {
   const [gameCompleted, setGameCompleted] = useState(false);
   const [editingPair, setEditingPair] = useState<WordPair | null>(null);
 
+  useEffect(() => {
+    document.documentElement.classList.add('dark');
+  }, []);
+
   const handleAddPair = (pair: WordPair) => {
     setWordPairs((prev) => [...prev, pair]);
   };
