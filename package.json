@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "remix vite:build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "remix": "^2.0.0" // Add Remix to dependencies
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
